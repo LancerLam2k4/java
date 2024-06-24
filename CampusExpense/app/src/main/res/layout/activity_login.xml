@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LOGIN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Username EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/username"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/enter_id"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Password EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="end|center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Buttons OK, CANCEL -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/idBtnDisplayProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#800080"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#800080"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
